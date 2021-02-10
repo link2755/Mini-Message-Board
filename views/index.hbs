@@ -1,7 +1,11 @@
+<a href="/new">send new message</a>
 <h1>{{title}}</h1>
 <ul>
     {{#each messages}}
-        <li>{{this.text}} - {{this.user}} - - - - - {{this.added}}</li>
+        <li>
+            {{this.user}}:{{this.added}}<br></br>
+            {{this.text}}<br></br>
+        </li>
+
     {{/each}}
 </ul>
-<a href="/new">send new message</a>
